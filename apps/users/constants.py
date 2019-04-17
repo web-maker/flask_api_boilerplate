@@ -1,0 +1,5 @@
+USERS_NOT_FOUND = "Users not found."
+USER_NOT_FOUND = "User not found."
+USER_ALREADY_EXIST = "User already exist."
+DELETE_YOURSELF_VALIDATION = "Can't delete yourself."
+USER_WAS_DELETED = "User was deleted."

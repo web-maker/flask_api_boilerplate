@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtualenv
+venv/
+env/
+ENV/
+
+# DotEnv config
+.env
+.flaskenv
+
+# IDE project folders
+.idea/
+.vscode/
+
+# tmp files
+*.pid
+tmp/
+.DS_Store
+
+# logs
+logs/
+
+# Sphinx doc
+doc/build/
+
+# APIDoc doc
+apidoc/
+
+# Node modules
+node_modules/
+
+# Test DB
+*.db
+*.db-journal
+
+# Logging
+*.log
+
+# Coverage
+.coverage
