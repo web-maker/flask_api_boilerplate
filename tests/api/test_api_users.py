@@ -2,13 +2,13 @@ from flask import url_for, json
 
 from apps.core.constants import (
     EMPTY_PAYLOAD, METHOD_NOT_ALLOWED, APPLICATION_X, WRONG_REQUEST_DATA_TYPE,
-    MISSING_AUTH_HEADER, MISSING_DATA_FOR_REQUIRED, ACCESS_DENIED,
+    MISSING_AUTH_HEADER, MISSING_DATA_FOR_REQUIRED,
 )
 from apps.users.constants import (
     USERS_NOT_FOUND, USER_NOT_FOUND, USER_WAS_DELETED,
-    USER_ALREADY_EXIST, DELETE_YOURSELF_VALIDATION)
+    USER_ALREADY_EXIST, DELETE_YOURSELF_VALIDATION,
+)
 from apps.users.models import User
-from apps.users.schemes import UserSchema
 from tests.fixtures import add_test_users, get_users
 from tests.test_base import ApiTestCase
 

@@ -1,6 +1,4 @@
-from apps.core.constants import IN_USE
 from apps.users.commands import create_admin_user
-from apps.users.constants import USER_ALREADY_EXIST
 from apps.users.models import User
 from tests.test_base import CliTestCase
 

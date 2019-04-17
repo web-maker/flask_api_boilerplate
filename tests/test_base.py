@@ -6,7 +6,7 @@ from apps import db, create_app
 from apps.api.v1 import api_v1_bp
 from apps.config import TestConfig
 from apps.core.constants import AUTHORIZATION_HEADER, APPLICATION_JSON
-from tests.fixtures import get_users, add_test_users
+from tests.fixtures import get_users
 
 
 class BaseTestCase(unittest.TestCase):
@@ -83,8 +83,8 @@ class ApiTestCase(DBTestCase):
 
             user_data = next(
                 (d for (i, d) in enumerate(get_users())
-                 if d["login"] == login)
-                , None,
+                 if d["login"] == login),
+                None,
             )
 
             self.assertTrue(user_data)
